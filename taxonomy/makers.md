@@ -156,7 +156,7 @@ Active: 1957–1982
 Description: Elsa Rusanen – Finnish silversmith active in Helsinki in the years 1957–1982.
 
 ### Erik Granit & Co
-URL: https://velvetmatter.art/makers/erik-granit-and-co-helsinki-finland-1958-19888/
+URL: https://velvetmatter.art/makers/erik-granit-and-co-helsinki-finland-1958-1988/
 Location: Helsinki
 Active: 1958–1988
 Description: Erik Granit & Co – Finnish silversmith company active in Helsinki in the years 1958–1988.

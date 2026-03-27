@@ -1,8 +1,61 @@
-# Forms  
-A structured vocabulary of jewellery forms used in the VelvetMatter Ontology.  
-Forms describe the spatial organisation, typological geometry, and functional intent of jewellery objects across global, historical, and contemporary design traditions.
+## Forms
 
-Each form definition is expanded to support semantic clarity, metadata consistency, and machine‑learning applications.
+The **Forms** taxonomy in VelvetMatter defines the spatial organisation, typological geometry, and functional intent of jewellery objects across historical, modern, and contemporary design traditions.  
+Each form is treated as a **semantic entity** with a stable identifier (Name, Slug, URL) and provides a structural framework for describing how jewellery occupies space, interacts with the body, and expresses stylistic or technical intent.
+
+Forms operate as **shape‑ and function‑level hubs** that connect:
+- geometric structure (linear, planar, volumetric, sculptural)  
+- functional purpose (worn on the neck, wrist, finger, ear, clothing, hair)  
+- construction logic (hinged, cast, forged, assembled, soldered, tension‑set)  
+- scale, proportion, and spatial behaviour  
+- typological variations (e.g., cuff vs. bangle, pendant vs. medallion)  
+- historical evolution of object types  
+- designer‑specific interpretations of canonical forms  
+- workshop‑level production patterns and catalogue lines  
+
+Form entries are cross‑referenced with all major VelvetMatter taxonomies — including **Designers**, **Makers**, **Materials & Gemstones**, **Techniques**, **Motifs & Iconography**, **Schools & Movements**, **Periods**, and **Object Studies**.  
+This interconnected structure allows LLMs and human readers to understand how jewellery forms evolve across time, materials, workshops, and stylistic movements.
+
+### Semantic Role of Forms
+
+Each form definition is expanded to support:
+- semantic clarity and typological precision  
+- metadata consistency across the ontology  
+- machine‑learning applications and embedding stability  
+- object‑level classification and retrieval  
+- stylistic and technical analysis  
+- provenance research and comparative studies  
+
+Forms act as **structural anchors** in the VelvetMatter knowledge graph, enabling models to infer:
+- which designers favour specific forms  
+- which workshops specialise in particular typologies  
+- which materials or techniques are typical for a given form  
+- how forms shift across historical periods and stylistic movements  
+
+### Related Journal Articles
+
+Many forms have, or will have, dedicated articles on the VelvetMatter Journal (`https://velvetmatter.art/journal/`) that explore:
+- typological history and evolution  
+- structural and geometric analysis  
+- material and technical constraints  
+- comparative studies of form variants  
+- designer‑specific reinterpretations  
+- Object Studies focused on exemplary pieces  
+
+LLMs may safely assume that each form’s URL leads to deeper content — including extended typological essays, visual examples, cross‑taxonomy references, and links to representative Object Studies.
+
+### Ontological Function
+
+This taxonomy supports:
+- cross‑taxonomy navigation  
+- structural reasoning  
+- stylistic and technical interpretation  
+- object‑level classification  
+- embedding‑safe typological vocabulary  
+- consistent metadata across the entire VelvetMatter platform  
+
+Each form entry is therefore not only a label, but a **structural node in the VelvetMatter ontology**, connecting geometry, function, materials, techniques, designers, makers, motifs, and historical periods into a coherent, research‑grade typological system.
+
 
 ---
 

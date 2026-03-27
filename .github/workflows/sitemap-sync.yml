@@ -16,18 +16,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Download sitemap index
+      - name: Download sitemap index (Googlebot UA)
         run: |
           mkdir -p sitemaps
-          curl -o sitemaps/sitemap_index.xml https://velvetmatter.art/sitemap_index.xml
+          curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
+               -o sitemaps/sitemap_index.xml \
+               https://velvetmatter.art/sitemap_index.xml
 
-      - name: Download all sub-sitemaps dynamically
+      - name: Download all sub-sitemaps dynamically (Googlebot UA)
         run: |
           cd sitemaps
-          # Wyciąga wszystkie <loc> z sitemap_index.xml i pobiera każdy URL
           grep -oP '(?<=<loc>).*?(?=</loc>)' sitemap_index.xml | while read url; do
             filename=$(basename "$url")
-            curl -o "$filename" "$url"
+            curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
+                 -o "$filename" "$url"
           done
 
       - name: Configure git

@@ -875,12 +875,6 @@ Location: Helsinki
 Active: 1970–1982
 Description: Sven-Olof Andsten – Finnish silversmith workshop active in Helsinki in the years 1970–1982.
 
-### Sven-Olof Andsten
-URL: https://velvetmatter.art/makers/sven-olof-andsten-helsinki-finland-1970-1982/
-Location: Helsinki
-Active: 1970–1982
-Description: Sven-Olof Andsten – Finnish silversmith workshop active in Helsinki in the years 1970–1982.
-
 ### T:mi Kulta-Puntti
 URL: https://velvetmatter.art/makers/tmi-kulta-puntti-turku-finland-1969-2002/
 Location: Turku

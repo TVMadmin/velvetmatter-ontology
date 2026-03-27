@@ -46,6 +46,19 @@ A structured list of national hallmark systems (e.g., Sweden’s Three Crowns, D
 One of the most extensive public datasets of Finnish responsibility marks (maker’s marks), including monograms, symbols, and historical puumerkki marks.  
 
 
+### **Letter Marks (Date Marks)**
+A structured system of alphabetical date marks used by assay offices to determine the year of manufacture.  
+Letter marks are essential for precise dating of jewellery and silver objects, especially in Nordic and British hallmark systems.
+
+This ontology includes:
+- annual alphabetical cycles used in Finland, Sweden, Denmark, Norway, and the UK  
+- variations in letter shape, serif style, and frame shape  
+- transitions between cycles (e.g., A–Z, a–z, Gothic cycles)  
+- cross‑references to national hallmark systems  
+- examples of date mark interpretation within Object Studies (OS)
+
+Letter marks are a core component of hallmark-based dating and are integrated into the VelvetMatter taxonomy for chronological analysis.
+
 ### **Materials & Gemstone Materials**
 Taxonomy of metals, alloys, stones, and decorative materials used in jewellery.
 

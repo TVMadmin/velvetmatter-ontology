@@ -1,5 +1,8 @@
 name: Daily Sitemap Sync
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 3 * * *"   # codziennie o 03:00 UTC

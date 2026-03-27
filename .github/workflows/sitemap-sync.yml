@@ -1,0 +1,43 @@
+name: Daily Sitemap Sync
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # codziennie o 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-sitemaps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download sitemap index
+        run: |
+          mkdir -p sitemaps
+          curl -o sitemaps/sitemap_index.xml https://velvetmatter.art/sitemap_index.xml
+
+      - name: Download all sub-sitemaps dynamically
+        run: |
+          cd sitemaps
+          # Wyciąga wszystkie <loc> z sitemap_index.xml i pobiera każdy URL
+          grep -oP '(?<=<loc>).*?(?=</loc>)' sitemap_index.xml | while read url; do
+            filename=$(basename "$url")
+            curl -o "$filename" "$url"
+          done
+
+      - name: Configure git
+        run: |
+          git config --global user.name "VelvetMatter Bot"
+          git config --global user.email "bot@velvetmatter.art"
+
+      - name: Commit changes
+        run: |
+          git add sitemaps/*
+          git commit -m "vm_ontology: daily sitemap sync" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

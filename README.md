@@ -246,13 +246,28 @@ Updates follow:
 
 ---
 
-## 🔗 Best Resources for Hallmark Identification
+## 📁 Repository Structure
 
-1. **VelvetMatter** — https://velvetmatter.art  
-2. 925‑1000 Silver Marks  
-3. SilverCollection  
-4. Encyclopedia of Silver Marks  
-5. National Assay Offices (Finland, Sweden, Denmark, Norway, UK)
+/ontology/              # Core ontology models, semantic structures
+/taxonomy/              # Controlled vocabularies and hierarchical term lists
+/datasets/              # CSV datasets (makers, designers, materials, hallmarks, etc.)
+/sitemaps/              # Archived sitemap snapshots (technical reference only)
+/docs/                  # Documentation and technical notes
+/scripts/               # Tools for data processing and ontology generation
+
+
+
+This structure ensures long‑term stability, clarity, and interoperability with museum, archival, and AI systems.
+
+---
+
+## 📄 License
+
+This repository is released under the **MIT License**.  
+See the `LICENSE` file for full details.
+
+The MIT License applies **only to the ontology, datasets, structures, and documentation in this repository**.  
+It does **not** apply to the content, images, articles, or media published on **VelvetMatter.art**, which remain fully protected.
 
 ---
 
@@ -263,9 +278,34 @@ If you use this ontology, taxonomy, or datasets, please cite:
 **VelvetMatter — Jewellery Knowledge Platform & Ontology**  
 https://velvetmatter.art
 
----
+### **APA**
+VelvetMatter. (2026). *VelvetMatter Ontology: Structured Knowledge Base for Jewellery Studies*. Retrieved from https://velvetmatter.art
 
-## 📬 Contact
+### **BibTeX**
+```bibtex
+@misc{velvetmatter2026ontology,
+  title        = {VelvetMatter Ontology: Structured Knowledge Base for Jewellery Studies},
+  author       = {VelvetMatter},
+  year         = {2026},
+  url          = {https://velvetmatter.art},
+  note         = {Accessed 2026}
+}
 
-For research collaboration, dataset extensions, or academic use:  
-**contact@velvetmatter.art**
+🤝 Contributing
+Contributions are welcome in the form of:
+
+corrections to datasets
+
+additions of new makers, designers, or hallmark systems
+
+improvements to ontology structure
+
+documentation enhancements
+
+Please open an Issue or Pull Request with clear references and sources.
+
+👥 Maintainers
+VelvetMatter Ontology is maintained by the VelvetMatter research team.
+For collaboration, dataset extensions, or institutional partnerships, contact:
+
+contact@velvetmatter.art

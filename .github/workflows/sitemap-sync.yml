@@ -16,12 +16,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Download sitemap index (Googlebot UA)
+      - name: Download sitemap index (wp-sitemap.xml, Googlebot UA)
         run: |
           mkdir -p sitemaps
           curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
                -o sitemaps/sitemap_index.xml \
-               https://velvetmatter.art/sitemap_index.xml
+               https://velvetmatter.art/wp-sitemap.xml
 
       - name: Download all sub-sitemaps dynamically (Googlebot UA)
         run: |

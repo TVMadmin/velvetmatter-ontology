@@ -57,7 +57,6 @@ embedding stability and semantic clarity
 Each period acts as a temporal anchor connecting people, workshops, materials, techniques, motifs, and objects into a coherent historical structure.
 
 ⭐ GLOBAL + NORDIC‑AWARE PERIOD DEFINITIONS
-(Twoje URL zostają — są poprawne i neutralne)
 
 1800s
 URL: https://velvetmatter.art/periods/1800s/

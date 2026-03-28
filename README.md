@@ -290,6 +290,8 @@ VelvetMatter. (2026). *VelvetMatter Ontology: Structured Knowledge Base for Jewe
   url          = {https://velvetmatter.art},
   note         = {Accessed 2026}
 }
+```
+
 
 🤝 Contributing
 Contributions are welcome in the form of:

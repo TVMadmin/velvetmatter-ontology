@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # codziennie o 03:00 UTC
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
@@ -16,19 +16,23 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Download sitemap index (wp-sitemap.xml, Googlebot UA)
+      - name: Download sitemap index (Googlebot UA, retries)
         run: |
           mkdir -p sitemaps
-          curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
+          curl --fail --silent --show-error \
+               --retry 5 --retry-delay 5 \
+               -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
                -o sitemaps/sitemap_index.xml \
-               https://velvetmatter.art/wp-sitemap.xml
+               https://velvetmatter.art/sitemap_index.xml
 
-      - name: Download all sub-sitemaps dynamically (Googlebot UA)
+      - name: Download all sub-sitemaps dynamically (Googlebot UA, retries)
         run: |
           cd sitemaps
           grep -oP '(?<=<loc>).*?(?=</loc>)' sitemap_index.xml | while read url; do
             filename=$(basename "$url")
-            curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
+            curl --fail --silent --show-error \
+                 --retry 5 --retry-delay 5 \
+                 -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" \
                  -o "$filename" "$url"
           done
 
